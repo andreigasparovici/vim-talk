@@ -11,8 +11,8 @@
 		socket.emit('auth', password);
 		socket.on('auth', function(ok){
 			if(!ok) {
-				password = prompt("Enter password");
-				socket.emit('auth', password);
+				alert('Unauthorized!');
+				history.go(0);
 			}
 		});
 		function next() {

@@ -1,2 +1,16 @@
 #!/bin/bash
+node server/index.js &>/dev/null &
+node generate_qrcode.js
+xdotool key --clearmodifiers ctrl+shift+equal
+xdotool key --clearmodifiers ctrl+shift+equal
+xdotool key --clearmodifiers ctrl+shift+equal
+xdotool key --clearmodifiers ctrl+shift+equal
+xdotool key --clearmodifiers ctrl+shift+equal
+head -15 qrcode.txt
+read -p "Press enter to continue"
 vim -u presentation_config.vim slides.md
+xdotool key --clearmodifiers ctrl+minus
+xdotool key --clearmodifiers ctrl+minus
+xdotool key --clearmodifiers ctrl+minus
+xdotool key --clearmodifiers ctrl+minus
+xdotool key --clearmodifiers ctrl+minus

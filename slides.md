@@ -16,6 +16,7 @@
 
 # Despre mine
 
+
     Andrei Gasparovici
 
 
@@ -25,6 +26,7 @@
 
 
   * elev la CNI "Grigore Moisil", Braşov
+  * web developer & vim user
 
 
 
@@ -663,6 +665,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 # Undo & redo
 
+
 * u -> undo
 * C-r -> redo
 
@@ -708,6 +711,24 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * Esc
 
 => MAGIC
+
+
+
+
+
+# Exemplu
+
+
+
+  * Comentează / decomentează un fragment de cod
+
+  :tabnew code.js
+
+
+
+
+
+
 
 
 
@@ -1065,7 +1086,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-                       Întrebări?
+                        Întrebări?
 
 
 
