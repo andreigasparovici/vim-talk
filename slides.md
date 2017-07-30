@@ -14,6 +14,27 @@
                                     Infoeducaţie 2017
 
 
+# Despre mine
+
+    Andrei Gasparovici
+
+
+
+  * Github: https://github.com/andreigasparovici/
+  * Facebook: https://www.facebook.com/andreigasparovici
+
+
+  * elev la CNI "Grigore Moisil", Braşov
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,11 +62,12 @@
 
 
 
+
 # De ce vim ?
-	
 
 
-* funcţionează sub orice OS (GNU/Linux, Windows, Mac OS
+
+* funcţionează sub orice OS (GNU/Linux, Windows, Mac OS)
 * full-stack ready
 * rapid
 * documentaţie built-in excelentă
@@ -73,7 +95,7 @@
 * VISUAL mode
 * EX mode
 * COMMAND mode
-* COMPLETION mode (^X)
+** COMPLETION mode (^X)
 
 
 
@@ -92,11 +114,10 @@
 
 
 
-* Cum deschidem (şi închidem vim) ?
+* Cum deschidem (şi închidem) vim ?
 * Navigare sus-jos-stânga-dreapta
 * Căutare
 * Înlocuire
-* Litere mari şi mici
 
 
 
@@ -125,7 +146,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 * Închidere
 :quit
-:q 
+:q
 
 * Salvare şi închidere
 :wq
@@ -133,7 +154,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * Închidere fără salvare
 :q!
 
-* Mai multe fisiere? 
+* Mai multe fisiere?
 :wqa
 
 
@@ -181,7 +202,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * e -> la sfârşitul cuvântului următor
 * ge -> la sfârşitul cuvântului precedent
 
-* 3w -> 3 cuvinte 
+* 3w -> 3 cuvinte
 
 
 
@@ -236,7 +257,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * [p]% -> salt la p% din buffer
 
 
-# 
+#
 
 * L -> salt la ultima linie de pe ecran
 
@@ -249,6 +270,18 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 * C-f -> salt cu un ecran în jos
 * C-b -> salt cu un ecran în sus
+
+
+
+# Salt la o linie
+
+
+* [linie]G
+
+* :linie + Enter
+
+
+
 
 
 
@@ -267,6 +300,8 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * zz -> linia curentă este la mijlocul ecranului
 
 * zb -> linia curentă este ultima de pe ecran
+
+
 
 
 
@@ -357,7 +392,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * r[caracter nou]
 
 * Exemplu:
-    
+
     Voi înlocui fiecare o cu x.
 
 
@@ -372,7 +407,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 # Lucrul cu tab-uri
 
 
-* :tabnew [nume-fisier] -> deschide un nou tab 
+* :tabnew [nume-fisier] -> deschide un nou tab
 
 * Navigare între tab-uri
 
@@ -397,7 +432,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * :tabonly -> închiderea tuturor tab-urilor, în afară de cel curent
 
 * :tabfirst -> salt la primul tab
- 
+
 * :tablast -> salt la ultimul tab
 
 
@@ -464,7 +499,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 * Exemplu:
 
-    "Emacs has not a bit of chance to survive so long as VIM is around.  Besides, it also has the most detailed software documentation I have ever seen ,much better than most commercial software!" 
+    "Emacs has not a bit of chance to survive so long as VIM is around. Besides, it also has the most detailed software documentation I have ever seen ,much better than most commercial software!"
                                          (Leiming Qian)
 
 
@@ -521,7 +556,11 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
   5. Vreau să şterg toate caracterele până la primul 't'.
   6. Vreau să şterg codul dintre acolade.
       :tabnew code.c
+
         (The C programming language, pg 87)
+
+  7. Vreau să şterg codul din tag-ul <body>
+      :tabnew code.html
 
 
 
@@ -557,10 +596,22 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
     - :!ls -> execută o comandă de sistem
 
 * Disable: set nonumber
-
 * Toggle: set number!
-
 * See value: set number?
+
+
+# Exemplu: line numbering
+
+  :tabnew file1.txt
+
+
+
+
+
+
+
+
+
 
 
 
@@ -617,10 +668,10 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 * . -> redo last change
 
-* Persistent undo 
+* Persistent undo
 
   set undofile
-  set undodir=~/.vim/undodir 
+  set undodir=~/.vim/undodir
 
 
 
@@ -671,6 +722,8 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * C-a -> creşte cu 1 numărul de sub cursor
 * C-x -> scade cu 1 numărul de sub cursor
 
+* Exemplu: 1024
+
 
 
 
@@ -700,6 +753,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * Line completion
 * Filename completion
 * Vim command completion
+* Function completion
 
 
 * Enter completion mode:
@@ -717,13 +771,15 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
     "A previous girlfriend of mine switched to emacs.
     Needless to say, the relationship went nowhere."
                                   (Geoffrey Mann)
-                                  
 
-  
+
+
 
 
 
 # Line completion
+
+
 
 * C-x C-l
 
@@ -741,6 +797,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 # Filename completion
 
+
 * C-x C-f
 
   :!ls
@@ -756,6 +813,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 # Function completion
+
 
 * Completarea funcţiilor din standard library
 
@@ -787,6 +845,86 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
+# Mapping
+
+* Putem crea propriile combinaţii de taste
+
+* map -> Keybinding în toate modurile
+* map! -> Keybinding în insert mode şi command mode
+
+* nmap -> normal mode mapping
+* imap -> insert mode mapping
+* vmap -> visual mode mapping
+* cmap -> command mode mapping
+
+* unmap -> Speaks for itself
+
+
+# Exemplu
+
+* Compilarea şi executarea unui program C
+
+  :map <F9> :w<CR>:!gcc % -o %< -g && ./%<<CR>
+  :tabnew code3.c
+
+
+* Menţiuni:
+    - %    -> numele fişierului curent
+    - %<   -> numele fişierului curent fără extensie
+    - <CR> -> enter
+
+
+
+# Abrevieri
+
+
+:abbr vim Vi IMproved
+       ^
+       |
+    abreviere
+
+
+
+
+
+
+
+
+# Litere mari şi mici
+
+* ~ -> toggle case
+
+* gu + movement / visual selection -> lowercase
+* gU + movement / visual selection -> uppercase
+
+
+* Exemplu:
+
+  Vreau toate literele mari pe linia asta.
+
+
+
+
+
+# vimrc
+
+* Fişierul în care stocăm opţiunile şi setările
+
+* Se află în:
+    /home/user/.vimrc
+    /home/user/.vim/vimrc
+
+* Exemplu de fisier vimrc:
+    :tabnew example_vimrc.vim
+
+
+
+
+
+
+
+
+
 
 
 # Time travelling
@@ -808,8 +946,110 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-* :earlier 15s -> înapoi în timp cu 15s
-* :later 30s   -> înainte în timp cu 30s
+* :earlier 15s -> înapoi în timp cu 15 secunde
+* :later 30m   -> înainte în timp cu 30 minute
+
+
+
+
+
+
+
+
+
+# Plugin-uri
+
+
+
+* Extensii scrise în limbajul VimScript
+
+* Plugin manager:
+    - Pathogen (https://github.com/tpope/vim-pathogen)
+    - Vundle (https://github.com/VundleVim/Vundle.vim)
+    - Plug (https://github.com/junegunn/vim-plug)
+
+
+
+
+
+# Some awesome plugins that I use
+
+
+* vim-commentary
+    (https://github.com/tpope/vim-commentary)
+
+* vim-system-copy
+    (https://github.com/christoomey/vim-system-copy)
+
+* emmet-vim
+    (https://github.com/mattn/emmet-vim)
+
+
+
+
+
+# Vim commentary
+  (https://github.com/tpope/vim-commentary)
+
+
+  * Usage:
+
+    gc + motion / visual selection
+
+  * Example:
+
+    :tabnew code.js
+
+
+
+
+
+# Vim-system-copy
+  (https://github.com/christoomey/vim-system-copy)
+
+
+
+  * Vim nu foloseşte clipboard-ul sistemului, ci proprii regiştri
+
+  * Dar dacă am nevoie să copiez din vim în clipboard?
+
+
+
+
+
+
+
+
+#
+
+  * Usage:
+
+    - cp + motion / visual selection -> copy
+    - cv                             -> paste
+
+  * Requirements:
+
+    - xsel
+      * debian/ubuntu: apt install xsel
+      * arch: pacman -S xsel
+
+
+
+
+
+
+# Emmet-vim
+  (https://github.com/mattn/emmet-vim)
+
+
+
+  * Usage:
+       Emmet syntax + C-y,
+
+  * Exemplu:
+      :tabnew emmet.html
+
+
 
 
 
@@ -825,7 +1065,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-                        Întrebări?
+                       Întrebări?
 
 
 
@@ -842,7 +1082,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-                  Mulţumesc pentru atenţie!
+                Mulţumesc pentru atenţie!
 
 
 

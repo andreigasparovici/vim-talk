@@ -1,6 +1,7 @@
 set nocompatible
 
-set rtp+=./bundle
+set runtimepath+=./.vim
+execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
@@ -22,7 +23,7 @@ au VimEnter slides.md command! BACK normal ?#zt
 au VimEnter slides.md nnoremap <Bs> :BACK<CR>
 au VimEnter slides.md command! RUN execute getline(".")
 au VimEnter slides.md command! START normal ggL$
-au VimEnter slides.md command! END normal GL$
+au VimEnter slides.md command! END normal GL$:BACK<CR>
 au VimEnter slides.md command! EXIT normal ZZ
 
 nnoremap j gj
