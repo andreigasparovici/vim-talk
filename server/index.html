@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var password = prompt("Enter password");
+		var socket= io();
+		socket.emit('auth', password);
+		socket.on('auth', function(ok){
+			if(!ok) {
+				password = prompt("Enter password");
+				socket.emit('auth', password);
+			}
+		});
+		function next() {
+			socket.emit('next');
+		}
+		function prev() {
+			socket.emit('prev');
+		}
+	</script>
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			padding-top:10px;
+		}
+		#next {
+			display: block;
+			height: 200px;
+			width: 90%;
+			padding: 10px;
+			font-size: 3em;
+		}
+		#prev {
+			display: block;
+			width: 90%;
+			height: 200px;
+			padding: 10px;
+			font-size: 3em;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<button id="next" onclick="next()">NEXT</button>
+		<br>
+		<button id="prev" onclick="prev()">PREVIOUS</button>
+	</center>
+</body>
+</html>
