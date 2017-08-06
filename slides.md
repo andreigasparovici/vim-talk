@@ -3,22 +3,27 @@
 
 
 
-#                          VIM
+#   VIM
 
-                     From 0 to hero
-
-
+    From 0 to hero
 
 
-                                    Andrei Gasparovici
-                                    Infoeducaţie 2017
+
+
+                         Andrei Gasparovici
+                         Infoeducaţie 2017
+
+
+
+
+
+
 
 
 # Despre mine
 
 
     Andrei Gasparovici
-
 
 
   * Github: https://github.com/andreigasparovici/
@@ -46,7 +51,7 @@
 
 
 
-	Vim este un editor de text open-source dezvoltat în 1991 de către Bram Moolenar.
+    Vim este un editor de text open-source dezvoltat în 1991 de către Bram Moolenar.
 
 
 
@@ -176,9 +181,9 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 # Navigare sus-jos-stânga-dreapta
 
 
-                          k
-                      h      	l
-                          j
+                     k
+                  h    	l
+                     j
 
 
 * k -> o linie în sus
@@ -307,12 +312,6 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-
-
-
-
-
-
 # Căutare
 
 
@@ -347,6 +346,23 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * Exemplu: 3n -> a treia apariţie următoare
 
 * * -> caută cuvântul de sub cursor
+
+
+
+# Opţiuni pentru căutarea în document
+
+
+* :set incsearch -> Incremental search
+
+* :set hlsearch -> Highlight search results
+
+* :set ignorecase
+
+* :set smartcase -> Case-sensitive doar pentru litere mari
+
+
+
+
 
 
 
@@ -522,7 +538,9 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 * dd -> şterge linia
 * D -> şterge până la finalul liniei
 
-* x -> şterge caracterul de sub cursor
+* x -> şterge caracterul de sub cursor (delete)
+* X -> şterge caracterul din stânga cursorului
+      (backspace)
 
 
 
@@ -555,11 +573,9 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
   2. Vreau să şterg 3 caractere.
   3. Vreau să şterg (textul dintre paranteze).
   4. Vreau să şterg toată linia.
-  5. Vreau să şterg toate caracterele până la primul 't'.
+  5. Vreau să şterg toate caracterele până la primul 'g'.
   6. Vreau să şterg codul dintre acolade.
       :tabnew code.c
-
-        (The C programming language, pg 87)
 
   7. Vreau să şterg codul din tag-ul <body>
       :tabnew code.html
@@ -1042,7 +1058,6 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 #
-
   * Usage:
 
     - cp + motion / visual selection -> copy
@@ -1086,7 +1101,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-                        Întrebări?
+                 Întrebări?
 
 
 
@@ -1103,7 +1118,7 @@ $ vim -O fisier1.txt fisier2.txt (split vertical)
 
 
 
-                Mulţumesc pentru atenţie!
+         Mulţumesc pentru atenţie!
 
 
 
